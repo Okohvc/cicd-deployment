@@ -17,7 +17,7 @@ jobs:
         run: docker build -t okohvc/reactjs-app .
       - name: Publish image to docker hub
         run: docker push okohvc/reactjs-app:latest   
-
+  #fixed deployment issue
   deploy: 
     needs: build
     runs-on: self-hosted
